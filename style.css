@@ -1,0 +1,199 @@
+/* TACK */
+body {
+  /* Теперь это родительский элемент */
+  position: relative;
+}
+.parent {
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+  border: 2px solid black;
+  margin: auto;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border: 2px solid black;
+  position: absolute;
+  left: 100px;
+}
+
+/* .container {
+  height: 3000px;
+} */
+/* .fixed {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border: 2px solid black;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+} */
+
+/* .fixed {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    position: sticky;
+    top: 100px;
+    left: 200px;
+  } */
+
+/* .parent {
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+  border: 2px solid black;
+  margin: auto;
+  position: relative;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border: 2px solid black;
+  left: 100px;
+  position: absolute;
+} */
+
+/* Псевдоклассы и псевдоэлементы */
+
+/* :hover */
+/* div {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+}
+div:hover {
+  background-color: yellow;
+  transition: 2s;
+} */
+/* псевдоклассс для ссылок */
+/* visited  */
+/* a:visited {
+  color: green;
+}
+/* active-подсвеивае */
+/* a:active {
+  color: black;
+}
+.block {
+  background-color: violet;
+  width: 100px;
+  height: 100px;
+}
+.block:active {
+  background-color: teal;
+} */
+/* === first-child,last-child. nth-child(3)обращение только к некоторым элементам на странице ===  */
+/* ul {
+  list-style: none;
+}
+div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li:first-child > div {
+  background-color: yellow;
+}
+li:nth-child(3) > div {
+  background-color: green;
+}
+li:last-child > div {
+  background-color: blue;
+}
+
+ul {
+  list-style: none;
+}
+ul li::marker {
+  color: red;
+} */
+
+/* focus */
+/* input {
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: red;
+  transition: 0.8s;
+} */
+
+/* input:focus {
+  background-color: yellow;
+  transition: 0.8s;
+} */
+
+/* hot -  зсдсет стили всеу, что не содердит данный селектор */
+
+/* .div-1,
+.div-2 {
+  width: 100px;
+  height: 100px;
+  margin: 5px 0;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+div:not(.div-2) {
+  background-color: yellow;
+} */
+
+/* vilid, invalid -проверка данных в инпуте*/
+/* input:valid { */
+/* проверка на првильность данных по типу  */
+/* background-color: green;
+} */
+/* input:invalid { */
+/* если введены неправильнные данные */
+/* background-color: red;
+} */
+
+/* ПСЕВДОЭЛЕМЕНТЫ */
+/* h1::before { добавляет контент до осноного контента-
+  content: "World";
+}
+h1::after { -добавляет контент  после осноного контента
+  content: "World!";
+} */
+
+/* selection- это элемент, который приминяет стили к выделенному тексту */
+/* p::selection {
+  color: red;
+  background-color: black;
+} */
+
+/* firsr-letter обращение к первой букве */
+/* h1::first-letter {
+  color: red;
+  font-size: 55px;
+} */
+
+/* first-line обращение к первой строке*/
+/* p::first-line {
+  color: red;
+  font-size: 25px;
+} */
+
+/* odd-приеняет стили к нечетным */
+/* even-приеняет стили к четным */
+/* li:nth-child(even) {
+  color: red;
+} */
+
+li:nth-child(3n) {
+  color: aqua;
+}
